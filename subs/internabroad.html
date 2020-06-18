@@ -1,0 +1,604 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>African Internship Academy | Homepage</title>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.rotatingSlideshow.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="../css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/intern.css" type="text/css">
+<style>
+
+
+    .blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #fff;    }
+    49%{    color: #fff; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #fff;    }
+}
+
+.li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1em;
+  /* text-transform: uppercase; */
+  color: white;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.title {
+  font-family: 'Alegreya', serif;
+  font-size: 32px;
+  text-shadow: 1px 1px 4px #000; 
+  color: #ffff;
+  position: relative;
+  transition: 0.3s;
+}
+.subtitle {
+  font-family: sans-serif;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 4px;
+  color: white;
+  text-align: center;
+  color: white;
+  padding: 16px 40px;
+  background-color: rgb(0,4,42, .7);
+}
+.container2 {
+  width: 255px;
+  height: 255px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 36px;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 6px;
+}
+.button {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: -50px;
+  padding: 16px;
+  font-size: 18px;
+  background: #21345d;
+  color: #fff;
+  transition: 0.3s;
+  font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”,
+    “Droid Sans”, “Helvetica Neue”, sans-serif;
+}
+
+.container2:hover .button{
+  bottom:0;
+}
+.container2:hover .title {
+  margin-bottom: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+    <div class="site-wrapper no-animation">
+      <div class="mobile-nav">
+          <div class="links">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+              <a href="#">Longer link</a>
+          </div>
+      </div>
+      <nav>
+          <div style=" width: 100%; padding: 0px;" class="container">
+              <div style="padding: -15px;">
+                  <!-- <span>l</span><span>o</span><span>g</span><span>o</span> -->
+                  <img style="width: 180px" class="uk-logo" src="../images/logo2.jpeg" alt="" />
+              </div>
+              <div class="links">
+                  <div class="link teal">
+                      <a href="../index.html"><i class=" fa fa-home"></i></a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link blue nav-item dropdown">
+                      <a style="font-size: 1.2em; font-weight: 500;" class="nav-link dropdown-toggle" href="#"
+                          id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          About Us &#9663;
+                      </a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                      <div style="padding:8px" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="about_us.html">Who we are</a><br>
+                          <a class="dropdown-item" href="about_us.html#team">Our Team</a><br>
+                          <a class="dropdown-item" href="#">Our Fellows</a><br>
+                          <a class="dropdown-item" href="#">Our Metors</a><br>
+                          <a class="dropdown-item" href="../contact.html">Contact</a>
+                      </div>
+                  </div>
+                  <div class="link pink">
+                      <a style="font-size: 1.2em; font-weight: 500;" href="#">Courses</a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link blue">
+                      <a style="font-size: 1.2em; font-weight: 500;" href="../programs.html">Our Programs</a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link teal">
+                      <a style="font-size: 1.2em; font-weight: 500;" href="../apply.html">Apply</a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link teal">
+                      <a style="font-size: 1.2em; font-weight: 500;" href="#">Connect</a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link blue">
+                      <a style="font-size: 1.2em; font-weight: 500;" href="#">Blog</a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link">
+                      <button class="user-btn" href="#"><span style="color: white;" class="fa fa-lock"></span>
+                          Login</button>
+                  </div>
+              </div>
+              <div class="burger">
+                  <div class="close">
+                      <div class="line"></div>
+                      <div class="line"></div>
+                  </div>
+                  <div class="menu">
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                  </div>
+              </div>
+          </div>
+      </nav><br><br><br><br>
+  </div>
+
+    <!-- Our Programs -->
+    <main
+    style="display: flex; justify-content: center; align-items: center; background-color: #00042a; padding-top: 50px; padding-bottom: 50px;">
+    <div style=" display: flex; width: 80%; justify-content: center; align-items: center; ">
+      <!-- <div>
+        <img style="width: auto; margin: 16px;" src="images/quote.svg" alt="">
+      </div> -->
+      <div uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay:400">
+         <h1 style="text-align: center; font-weight: bold; color: white;">Virtual International Internships</h1>
+        <p class="text-center" style="font-size: 1.9em; line-height: 1.7em; color: white; margin-left: 26px; font-weight: lighter;">
+          Boost your employability, remotely 
+        </p>
+      </div><br><br><br><br><br>
+    </div>
+  </main><br><br><br>
+
+
+  <!-- Programs list -->
+  <div uk-grid uk-scrollspy="cls: uk-animation-fade; target: .container2; delay: 100; repeat: true" style="display: flex; flex-direction: column; align-items: center;">
+   
+
+      <div  style="display: flex;">
+        <div style=" background-image: url('../images/flags/south-africa.jpg')" class="container2">
+            <p class="title">
+              <small style="padding: 16px 6px;" class="subtitle">
+                South Africa
+              </small> 
+            </p>
+            <div class="button">Check this out</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/China.jpg')" class="container2">
+            <p class="title">
+              <small class="subtitle">
+                China
+              </small>
+            </p>
+            <div class="button">Check this out</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/ghana.jpg')"  class="container2">
+            <p class="title">
+              <small class="subtitle">
+                Ghana
+              </small>
+            </p>
+            <div class="button">Check this out</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/egypt.jpg')" class="container2">
+            <p class="title">
+              <small class="subtitle">
+                Egypt
+              </small>
+            </p>
+            <div class="button">Check this out</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/korea.jpg')"  class="container2">
+            <p class="title">
+              <small class="subtitle">
+                Korea
+              </small>
+            </p>
+            <div class="button">Check this out</div>
+          </div>
+      </div >
+
+      <div style="display: flex;">
+        <div style=" background-image: url('../images/flags/usa.jpg')" class="container2">
+            <p class="title">
+              <small style="padding: 16px 6px;" class="subtitle">
+                United States
+              </small> 
+            </p>
+            <div class="button">Coming Soon...</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/france.jpg')" class="container2">
+            <p class="title">
+              <small class="subtitle">
+                France
+              </small>
+            </p>
+            <div class="button">Coming Soon...</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/nigeria.jpg')"  class="container2">
+            <p class="title">
+              <small class="subtitle">
+                Nigeria
+              </small>
+            </p>
+            <div class="button">Coming Soon...</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/ethiopia.jpg')" class="container2">
+            <p class="title">
+              <small class="subtitle">
+                Ethiopia
+              </small>
+            </p>
+            <div class="button">Coming Soon...</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/london.jpg')"  class="container2">
+            <p class="title">
+              <small class="subtitle">
+                London
+              </small>
+            </p>
+            <div class="button">Coming Soon...</div>
+          </div>
+      </div>
+
+      <div style="display: flex;">
+        <div style=" background-image: url('../images/flags/algeria.jpg')" class="container2">
+            <p class="title">
+              <small class="subtitle">
+                Algeria
+              </small> 
+            </p>
+            <div class="button">Coming Soon...</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/india.jpg')" class="container2">
+            <p class="title">
+              <small class="subtitle">
+                India
+              </small>
+            </p>
+            <div class="button">Coming Soon...</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/argentina.png')"  class="container2">
+            <p class="title">
+              <small class="subtitle">
+                Argentina
+              </small>
+            </p>
+            <div class="button">Coming Soon...</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/portugal.jpeg')" class="container2">
+            <p class="title">
+              <small class="subtitle">
+                Portugal
+              </small>
+            </p>
+            <div class="button">Coming Soon...</div>
+          </div>
+    
+          <div style=" background-image: url('../images/flags/malaysia.jpg')"  class="container2">
+            <p class="title">
+              <small class="subtitle">
+                Malaysia
+              </small>
+            </p>
+            <div class="button">Coming Soon...</div>
+          </div>
+      </div>
+  </div> <br><br><br>
+
+
+  <!-- INTRO -->
+  <main
+  style="display: flex; justify-content: center; align-items: center; background-color: #00042a; padding-top: 100px; padding-bottom: 100px;">
+  <div style=" display: flex; width: 80%; justify-content: center; align-items: center; ">
+    <!-- <div>
+      <img style="width: auto; margin: 16px;" src="images/quote.svg" alt="">
+    </div> -->
+    <div class="text-center" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay:400">
+      <p class="text-center" style="font-size: 1.9em; line-height: 1.7em; color: white; margin-left: 26px; font-weight: lighter;">
+        Our internship program will enable you to develop your skills and build your career while sitting side-by-side with our business leaders and have the opportunity to work on projects from day one.
+      </p>
+      <a href="../apply.html" style="border:none; border-radius:26px; padding: 8px 16px; background-color: #fa0205; color: white;">Are you ready? Get started here <span class="fa fa-arrow-right blinking"></span></a>
+    </div><br><br><br><br><br>
+  </div>
+</main>
+
+
+<!-- FAQ Tabs -->
+<main style="display: flex; justify-content: center; align-items: center; background-color: whitesmoke; padding-top: 100px; padding-bottom: 100px;">
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="../images/3.jpg" alt="">
+        <div class="overlay">
+           <h2>University Benefits</h2>
+           <a class="info" href="internship.html#university">Read More</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+  <div class="hovereffect">
+      <img class="img-responsive" src="../images/student_benefit.jpg" alt="">
+      <div class="overlay">
+         <h2>Students Benefits</h2>
+         <a class="info" href="internship.html#student">Read More</a>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+  <div class="hovereffect">
+      <img class="img-responsive" src="../images/corporate_benefit.jpg" alt="">
+      <div class="overlay">
+         <h2>Corporate Benefits</h2>
+         <a class="info" href="internship.html#corporate">Read More</a>
+      </div>
+  </div>
+</div>
+
+   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="hovereffect">
+          <img class="img-responsive" src="../images/how_to_apply.jpg" alt="">
+          <div class="overlay">
+             <h2>How to Apply</h2>
+             <a class="info" href="#">Read More</a>
+          </div>
+      </div>
+  </div> 
+
+</main>
+
+
+  <!-- TESTIMONIAL SECTION -->
+
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel"
+    style="background-color:#00042a ; padding-top: 50px;">
+    <h2 style="color: #fff;">What some people say</h2>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4 style="color: #fff; margin-top: 0px;"> <img style="width: 100px; border-radius: 50%;"
+            src="../images/avatars/avatar_img.png" alt=""><br>
+          "The training has been very impactful. It’s different than what we do in school. <br> It is more practical and
+          provided an understanding of what is expected of us in the corporate world."<br><br><span>Ruth Angso</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="color: #fff;  margin-top: 0px;"><img style="width: 100px; border-radius: 50%;"
+            src="../images/avatars/avatar_img2.png" alt=""><br>
+          "The program really met my expectations. I got to discover myself and got a sense <br> of direction about my
+          professional and personal growth."<br><br><span>Elisha Adu-Darko</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="color: #fff;  margin-top: 0px;"><img style="width: 100px; border-radius: 50%;"
+            src="../images/avatars/avatar_img3.png" alt=""><br>
+          "The training met my expectations and in a way exceeded them. We were <br> taught by very prominent members of
+          society. Our facilitators gave us insight, <br> guidance and most importantly the know how to make it in the
+          Business world."<br><span>Kevin Amanquah</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="color: #fff;  margin-top: 0px;"><img style="width: 100px; border-radius: 50%;"
+            src="../images/avatars/avatar_img4.png" alt=""><br>
+          "AIA really stressed teamwork. You have to have certain qualities to work <br> effectively in a team and I
+          learned to appreciate different perspectives towards <br> achieving a goal."<br><span>Caleb Nyanor</span></h4>
+      </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div><br><br><br>
+
+    <!-- FOOTER -->
+
+    <footer class="-bg-footer" id="footer">
+      <div class="container-fluid">
+          <div class="row footer-align">
+              <div class="col-md-3 col-sm-4 text-center">
+                  <h5 style="text-align: center;">Africa Skills Hub</h5>
+                  <hr class="hr-foot">
+                  <div>
+                      <a class="footer">
+                          Africa Skills Hub is a youth employment accelerator and business incubator that aims at building Africa’s next generational change agents through practical and accessible learning and coaching tools, delivered online and offline using our Career Pathways Module. The Career Pathways Module (CPM) comprises Digital Skills, Leadership Skills and Entrepreneurial Skills.
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                  <h5 style="text-align: center;">Our Approach</h5>
+                  <hr class="hr-foot">
+                  <div style="text-align: center;">
+                      <ul style="line-height: 2.6em;">
+                          <a class="footer-a" href="../programs.html#work_readiness">
+                              <li>&#8594; Work Readiness Program</li>
+                          </a>
+                          <a class="footer-a" href="../programs.html#entrepreneurship">
+                              <li>&#8594; Entrepreneurship and Business Incubation Services</li>
+                          </a>
+                          <a class="footer-a" href="../programs.html#apprenticeship">
+                              <li>&#8594; Apprenticeship Services</li>
+                          </a>
+                          <a class="footer-a" href="#">
+                              <li>&#8594; Online Courses</li>
+                          </a>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                  <h5 style="text-align: center;">Internships</h5>
+                  <hr class="hr-foot">
+                  <div class="footer-items">
+                      <ul style="line-height: 2.6em; margin: 0px; text-align: left;">
+                          <a class="footer-a" href="internship.html#corporate">
+                              <li>&#8594; Corporate Benefits</li></a>
+                              <a class="footer-a" href="internship.html#university">
+                                  <li>&#8594; University Benefits</li>
+                              </a>
+                              <a class="footer-a" href="internship.html#student">
+                                  <li>&#8594; Students Benefits</li>
+                              </a>
+                              <a class="footer-a" href="#">
+                                  <li>&#8594; How to Partner</li>
+                              </a>
+                              <a class="footer-a" href="internabroad.html">
+                                  <li>&#8594; Intern Abroad</li>
+                              </a>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                  <h5 style="text-align: center;">Office</h5>
+                  <hr class="hr-foot">
+                  <div class="footer-items">
+                      <ul style="margin: 0px; text-align: left;">
+                          <a class="footer-a" href="../contact.html">
+                              <li>&#8594; Contact</li>
+                          </a>
+                          <a class="footer-a" href="../subs/faq.html">
+                              <li>&#8594; FAQ</li>
+                          </a>
+                          <a class="footer-a" href="#">
+                              <li>&#8594; Privacy Policy</li>
+                          </a>
+                          <a class="footer-a" style="font-size: 1.5em; color: white;" href="https://www.facebook.com/AfricaSkillsHub/" class="facebook"
+                              target="_blank"><i class="fab fa-facebook"></i></a>
+                          <a style="font-size: 1.5em; margin-left: 12px; color: white;" href="https://twitter.com/africaskillshub" class="twitter"
+                              target="_blank"><i class="fab fa-twitter"></i></a>
+                          <a style="font-size: 1.5em; margin-left: 12px; color: white;" href="https://www.instagram.com/africaskillshub/" class="instagram"
+                              target="_blank"><i class="fab fa-instagram"></i></a>
+                              <a style="font-size: 1.5em; margin-left: 12px; color: white;" href="https://www.linkedin.com/company/africaskillshub/?viewAsMember=true" class="linkedin"
+                              target="_blank"><i class="fab fa-linkedin"></i></a>
+                      </ul><br>
+                  </div>
+                  <img style="display: block; margin: auto;" src="../images/sdg.png" alt="" srcset=""><br><br>
+              </div>
+          </div>
+      </div>
+
+  </footer>
+
+    <div class="footer-copyright">
+        <p>&copy 2020 Copyright <a href="#" target="blank"> People Initiative Foundation</a></p>
+    </div>
+      
+
+    <script src="../js/script.js"></script>
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script src="../js/navbar.js"></script>
+
+    </script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,726 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>African Internship Academy | Homepage</title>
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- google recapcha -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+ 
+</head>
+
+<body style="font-family: angus" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+  <div class="site-wrapper no-animation">
+    <div class="mobile-nav">
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Longer link</a>
+        </div>
+    </div>
+    <nav>
+        <div style=" width: 100%; padding: 0px;" class="container">
+            <div style="padding: -15px;">
+                <!-- <span>l</span><span>o</span><span>g</span><span>o</span> -->
+                <img style="width: 180px" class="uk-logo" src="../images/logo2.jpeg" alt="" />
+            </div>
+            <div class="links">
+                <div class="link teal">
+                    <a href="../index.html"><i class=" fa fa-home"></i></a>
+                    <div class="underline">
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                    </div>
+                </div>
+                <div class="link blue nav-item dropdown">
+                    <a style="font-size: 1.2em; font-weight: 500;" class="nav-link dropdown-toggle" href="#"
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        About Us &#9663;
+                    </a>
+                    <div class="underline">
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                    </div>
+                    <div style="padding:8px" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about_us.html">Who we are</a><br>
+                        <a class="dropdown-item" href="about_us.html#team">Our Team</a><br>
+                        <a class="dropdown-item" href="#">Our Fellows</a><br>
+                        <a class="dropdown-item" href="#">Our Metors</a><br>
+                        <a class="dropdown-item" href="../contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="link pink">
+                    <a style="font-size: 1.2em; font-weight: 500;" href="#">Courses</a>
+                    <div class="underline">
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                    </div>
+                </div>
+                <div class="link blue">
+                    <a style="font-size: 1.2em; font-weight: 500;" href="../programs.html">Our Programs</a>
+                    <div class="underline">
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                    </div>
+                </div>
+                <div class="link teal">
+                    <a style="font-size: 1.2em; font-weight: 500;" href="../apply.html">Apply</a>
+                    <div class="underline">
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                    </div>
+                </div>
+                <div class="link teal">
+                    <a style="font-size: 1.2em; font-weight: 500;" href="#">Connect</a>
+                    <div class="underline">
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                    </div>
+                </div>
+                <div class="link blue">
+                    <a style="font-size: 1.2em; font-weight: 500;" href="#">Blog</a>
+                    <div class="underline">
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                        <div class="part"></div>
+                    </div>
+                </div>
+                <div class="link">
+                    <button class="user-btn" href="#"><span style="color: white;" class="fa fa-lock"></span>
+                        Login</button>
+                </div>
+            </div>
+            <div class="burger">
+                <div class="close">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </nav><br><br><br><br>
+</div>
+
+  <!-- 
+<header>
+  <img style="width: 100%; height: 600px;" src="images/about_hero_img.jpg" alt="">
+</header> -->
+
+
+  <!-- Container (About Section) -->
+  <div style="background-color: whitesmoke; padding: 50px;" id="about" class="container-fluid">
+    <div class="row">
+      <div uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true" class="col-sm-6">
+        <h3><b>About Africa Skills Hub</b></h3>
+        <hr>
+        <h4 uk-scrollspy="cls: uk-animation-slide-left delay: 300; repeat: true" style="font-weight: bold;">Who We Are</h4>
+        <p uk-scrollspy="cls: uk-animation-slide-left delay: 300; repeat: true" style="margin: 0px; font-weight: 400; color: black; font-size: 1.2em;">      
+          Africa Skills Hub (formerly known as Africa Internship Academy) is a youth employment accelerator and business incubator that aims at building Africa’s next generational change agents through practical and accessible learning and coaching tools, delivered online and offline using our Career Pathways Module. </p><br>
+
+         <p uk-scrollspy="cls: uk-animation-slide-left delay: 300; repeat: true" style="margin: 0px; font-weight: 400; color: black; font-size: 1.2em;">The Career Pathways Module ( CPM) comprises Digital Skills, Leadership Skills and Entrepreneurial Skills. The Career Pathways Module ( CPM) comprises Digital Skills, Leadership Skills and Entrepreneurial Skills. Our approach- which combines both online and face-to-face with interactive sessions ‘Work Integrated Learning’ requires every young person to undergo a particular skills training to get an <b> Africa Skills Badge.</b> </p><br>
+
+         <p uk-scrollspy="cls: uk-animation-slide-left delay: 300; repeat: true" style="margin: 0px; font-weight: 400; color: black; font-size: 1.2em;">This initiative sought to create a  skills mindset among young people across Africa. At the Africa Skills Hub, skills acquisition is the centre of our work as SKILLS have become the global currency of the 21st century.</p>
+      </div>
+      <div class="col-sm-6">
+        <!-- <span class="glyphicon glyphicon-signal logo"></span> -->
+        <img uk-scrollspy="cls: uk-animation-slide-right delay: 300; repeat: true" src="../images/intro.svg"
+          alt="">
+      </div>
+    </div><br><br><br>
+  </div>
+
+  <main
+  style="display: flex; justify-content: center; align-items: center;padding-top: 100px; padding-bottom: 100px;">
+  <div style=" display: flex; width: 80%; justify-content: center; align-items: center; ">
+    <!-- <div>
+      <img style="width: auto; margin: 16px;" src="images/quote.svg" alt="">
+    </div> -->
+    <div uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:400">
+      <h1 style="text-align: center; font-weight: bold;">Why Africa Skills Hub</h1>
+      <p
+        style="font-size: 1.5em; line-height: 1.7em; margin-left: 26px; color: black; overflow: hidden;">
+        The African continent is projected to have the largest workforce by 2030 yet youth unemployment presents a huge crisis. Across the continent,  more than 90% of the 10M university graduates each year do not find jobs, with an average 5-year lag before most find their first job. Without work, many are disillusioned and apathetic, seeking to leave their countries or embarking on unsafe trips through the Sahara and Mediterranean. Yet, many organisations are struggling to source the management talent needed to service this rapid growth, while many young Africans lack the skills needed to secure jobs or start successful businesses. Again is the lack of interest in young Africans to acquire hands-on skills for better careers in the informal sector which is largely the continents biggest contributing sector in terms of Gross Domestic Product.
+      </p>
+    </div><br><br><br><br><br>
+  </div>
+</main>
+
+  <div style="background-color: #00042a;" id="approach" class="container-fluid bg-grey">
+    <div class="row" style="display: flex; justify-content: center; align-items: center;">
+      <div class="col-sm-5">
+        <!-- <span class="glyphicon glyphicon-globe logo slideanim"></span> -->
+        <img uk-scrollspy="cls: uk-animation-slide-bottom delay: 300; repeat: true" src="../images/7.jpg" alt="">
+      </div>
+      <div class="col-sm-7">
+        <h1 style="color: white;" uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true"><b>OUR APPROACH</b></h1><br>
+        <hr uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">
+        <p style="font-size: 1.3em; padding: 8px; font-weight: lighter; color: white;">Our learning model is built around the ‘Work Integrated Learning Model’ which is described as more of work and learn principle.
+          As a youth employment accelerator and business incubator we combine both online and offline learning and coaching tools to help build skilled African youth as agents of change.  We introduce them to both soft and hard skills which help them to scale their career. We use well experienced faculty and coaches to assist them as they go- through 2-week extensive training to get an Africa Skills Badge. And that’s where the magic happens.
+          Last year, our Work Integrated Learning Module helped over 100 young people to start and scale their businesses. Interested in learning more?
+          
+        </p>
+        <hr uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Services Section) -->
+  <!-- <div uk-scrollspy="cls: uk-animation-fade; target: .service; delay: 200; repeat: true" id="services"
+    class="container-fluid text-center" style="background-color:#00042a;">
+    <h1 style="color: white;border: 4px solid white;  border-radius: 10px;">WHAT WE DO </h1>
+    </h2>
+    <br>
+    <div class="row slideanim" style="display: flex; justify-content: space-between;">
+      <div style="background-color:white; padding: 16px 0px;" class="col-sm-3 service">
+        <span style="color: black;" class="glyphicon glyphicon-eye-open logo-small"></span>
+        <h5><b>Work Readiness Program</b></h5>
+        <hr>
+        <p style="font-size: 14px; padding: 8px;">Our Work Readiness Program bridges the gap between education and the
+          world of work. A structured career Bootcamp equips entry-level graduates and potential jobseekers with the
+          skills and confidence that employers are looking for.</p>
+      </div>
+      <div style="background-color:white; padding: 16px 0px;" class="col-sm-4 service">
+        <span style="color: black;" class="glyphicon glyphicon-bullhorn logo-small"></span>
+        <h5><b>Entrepreneurship & Business Incubation Services</b></h5>
+        <hr>
+        <p style="font-size: 14px; padding: 8px;">Our Entrepreneurship & Business Incubation services primarily focuses
+          on providing business development services; startup incubators and funding for young businesses and SMEs to
+          enable them to grow and become successful through Incubation. At the Incubation phase, we provide shared
+          premises, business advisory and support services, access to investors, markets and international networks,
+          mentoring and a full-time, hands on management coaching. </p>
+      </div>
+
+      <div style="background-color:white; padding: 16px 0px;" class="col-sm-4 service">
+        <span style="color: black;" class="glyphicon glyphicon-send logo-small"></span>
+        <h5><b>Apprenticeship Services</b></h5>
+        <hr>
+        <p style="font-size: 14px; padding: 8px;">Our Apprenticeship Services focuses on arranging “Basic Training” for
+          apprentices without formal educational qualifications as well as organizing on-the-job training by combining
+          facilities available at several companies.This trainings upgrades the skill and competence level of our youth,
+          improve human capital, and job creation. As a skills hub, we recruit, employ and arrange training for
+          apprentices on behalf of employers.</p>
+      </div>
+    </div>
+
+    <br><br>
+
+  </div> -->
+
+  <!-- Container (Services Section) -->
+  <!-- <div uk-scrollspy="cls: uk-animation-fade; target: .icons; delay: 200; repeat: true" id="services"
+    class="container-fluid text-center">
+    <h2>Programs Include </h2>
+    <hr>
+
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4 icons">
+        <span style="color: black;" class="glyphicon glyphicon-education logo-small"></span>
+        <h5>CAREER EXPLORATION</h5>
+      </div>
+      <div class="col-sm-4 icons">
+        <span style="color: black;" class="glyphicon glyphicon-cog logo-small"></span>
+        <h5>SOFT SKILLS</h5>
+      </div>
+      <div class="col-sm-4 icons">
+        <span style="color: black;" class="glyphicon glyphicon-usd logo-small"></span>
+        <h5>FINANCIAL MANAGEMENT</h5>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="row slideanim">
+      <div class="col-sm-4 icons">
+        <span style="color: black;" class="glyphicon glyphicon-briefcase logo-small"></span>
+        <h5>WORKPLACE PREPARATION & <br> COMMUNICATION</h5>
+      </div>
+      <div class="col-sm-4 icons">
+        <span style="color: black;" class="glyphicon glyphicon-tasks logo-small"></span>
+        <h5>JOB RETENTION</h5>
+      </div>
+      <div class="col-sm-4 icons">
+        <span style="color: black;" class="glyphicon glyphicon-plus logo-small"></span>
+        <h5>INTERPERSONAL SKILLS & TEAMWORK</h5>
+      </div>
+    </div><br><br>
+
+    <div class="row slideanim">
+      <div class="col-sm-4 icons">
+        <span style="color: black;" class="glyphicon glyphicon-hourglass logo-small"></span>
+        <h5>ORGANIZATIONAL SKILLS</h5>
+      </div>
+      <div class="col-sm-4 icons">
+        <span style="color: black;" class="glyphicon glyphicon-certificate logo-small"></span>
+        <h5>SELF DETERMINATION & SELF-AWARENESS</h5>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- TESTIMONIAL SECTION -->
+
+  <!-- <div id="myCarousel" class="carousel slide text-center" data-ride="carousel"
+    style="background-color:#00042a ; padding-top: 50px;">
+    <h2 style="color: #fff;">What some people say</h2>
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4 style="color: #fff; margin-top: 0px;"> <img style="width: 100px; border-radius: 50%;"
+            src="images/avatar_img.png" alt=""><br>
+          "The training has been very impactful. It’s different than what we do in school. <br> It is more practical and
+          provided an understanding of what is expected of us in the corporate world."<br><span>Ruth Angso</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="color: #fff;  margin-top: 0px;"><img style="width: 100px; border-radius: 50%;"
+            src="images/avatar_img2.png" alt=""><br>
+          "The program really met my expectations. I got to discover myself and got a sense <br> of direction about my
+          professional and personal growth."<br><span>Elisha Adu-Darko</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="color: #fff;  margin-top: 0px;"><img style="width: 100px; border-radius: 50%;"
+            src="images/avatar_img3.png" alt=""><br>
+          "The training met my expectations and in a way exceeded them. We were <br> taught by very prominent members of
+          society. Our facilitators gave us insight, <br> guidance and most importantly the know how to make it in the
+          Business world."<br><span>Kevin Amanquah</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="color: #fff;  margin-top: 0px;"><img style="width: 100px; border-radius: 50%;"
+            src="images/avatar_img4.png" alt=""><br>
+          "AIA really stressed teamwork. You have to have certain qualities to work <br> effectively in a team and I
+          learned to appreciate different perspectives towards <br> achieving a goal."<br><span>Caleb Nyanor</span></h4>
+      </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> -->
+
+
+  <!-- <div id="contact" class="container-fluid bg-grey" style=" margin: 0px;">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Accra, Gh</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button id="demo-form" class="btn btn-default pull-right" class="g-recaptcha" 
+            data-sitekey="reCAPTCHA_site_key" 
+            data-callback='onSubmit' 
+            data-action='submit'>Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <!-- OUR TEAM -->
+  <!-- Our team Section -->
+
+	<div id="team" class="team-section" style="padding-top: 50px;">
+		<div class="inner-width">
+      <h2 style="font-weight: 500;">Meet Our <span style="color: teal;">Team</span> </h2>
+			<div class="pers">
+        <div class="pe">
+					<img src="../images/team/danielamoako.jpg" alt="rafeh">
+					<div class="p-name">Daniel Amoako Antwi</div>
+					<div class="p-des">Co-Founder, Executive Director </div><br>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+				</div>
+
+				<div class="pe">
+					<img src="../images/team/leslie.jpg" alt="rafeh">
+					<div class="p-name">Emmanuel Leslie Addae</div>
+					<div class="p-des">Co-Founder, Head of Research & Strategy</div>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+        </div>
+        
+        <div class="pe">
+					<img style="height: 240px;" src="../images/team/nat.jpeg" alt="rafeh">
+					<div class="p-name">Nathaniel Asare</div>
+					<div class="p-des">Head of Programs & Initiatives</div><br>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+				</div>
+
+				<div class="pe">
+					<img src="../images/team/ramatu.jpg" alt="rafeh">
+					<div class="p-name">Ramatu Abubakar </div>
+					<div class="p-des">Office & Accounts Manager </div><br>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+				</div>
+
+				<div class="pe">
+					<img src="../images/team/gloria.jpeg" alt="">
+					<div class="p-name">Nora Gloria Bamfowaa</div>
+					<div class="p-des">Client Support Officer  </div>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+				</div>
+
+				<div class="pe">
+					<img src="../images/team/perfect.jpeg" alt="rafeh">
+					<div class="p-name">Perfect Dadugblor</div>
+					<div class="p-des">Digital Media Specialist </div>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+				</div>
+
+        <div class="pe">
+					<img src="../images/team/philip.jpg" alt="rafeh">
+					<div class="p-name">Philip Mensah Okpoti</div>
+					<div class="p-des">Key Account Manager</div>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+        </div>
+        
+        <div class="pe">
+					<img src="../images/team/bless.jpg" alt="rafeh">
+					<div class="p-name">Bless K. Amenyo</div>
+					<div class="p-des">Hub Manager</div>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+        </div>
+        
+        <div class="pe">
+					<img style="height: 240px;" src="../images/team/zotoo.JPG" alt="rafeh">
+					<div class="p-name">Joseph Zotoo</div>
+					<div class="p-des">Internship Coordinator</div>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+        </div>
+        
+        <div class="pe">
+					<img src="../images/avatars/avatar_img4.png" alt="rafeh">
+					<div class="p-name">Isaac Forson</div>
+					<div class="p-des">Full Stack Developer</div>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+        </div>
+        
+        <div class="pe">
+					<img style="height: 235px;" src="../images/team/ntoso.jpeg" alt="rafeh">
+					<div class="p-name">Daniel Kwaku Ntoso</div>
+					<div class="p-des">Creative Associate </div>
+					<!-- <div class="p-sm">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-tumblr"></i></a>
+					</div> -->
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+  
+
+  <div uk-scrollspy="cls: uk-animation-fade; delay: 100; repeat: true" style="background-color: whitesmoke; padding-top: 50px;">
+    <h1 style="text-align: center; font-weight: bolder;">Meet our clients and partners</h1><br><br><br>
+    <div uk-slider="autoplay: true" autoplay-interval="1500">
+
+      <ul class="uk-slider-items uk-child-width-1-6 uk-child-width-1-4@s uk-child-width-1-5@m uk-light">
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 200px;" src="../images/patners/AGI.png" alt="">
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 200px;" src="../images/patners/british-counsil.png" alt="">
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 100px;" src="../images/patners/Cotvet logo.png" alt="">
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 200px;" src="../images/patners/gesci-logo.png" alt="">
+        </li>
+        <!-- <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 150px;" src="images/patners/MDF.png" alt="">
+      </li> -->
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 200px;" src="../images/patners/ministry-of-business-development.png" alt="">
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 200px;" src="../images/patners/NABCO.jpg" alt="">
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 200px;" src="../images/patners/NBSSI.png" alt="">
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 200px;" src="../images/patners/neip.jpg" alt="">
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 200px;" src="../images/patners/Pyxera Global.png" alt="">
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 200px;" src="../images/patners/sdfff.jpg" alt="">
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+          <img style="width: 200px;" src="../images/patners/YEA.png" alt="">
+        </li>
+      </ul>
+    </div><br><br>
+  </div>
+
+
+  <footer class="-bg-footer" id="footer">
+    <div class="container-fluid">
+        <div class="row footer-align">
+            <div class="col-md-3 col-sm-4 text-center">
+                <h5 style="text-align: center;">Africa Skills Hub</h5>
+                <hr class="hr-foot">
+                <div>
+                    <a class="footer">
+                        Africa Skills Hub is a youth employment accelerator and business incubator that aims at building Africa’s next generational change agents through practical and accessible learning and coaching tools, delivered online and offline using our Career Pathways Module. The Career Pathways Module (CPM) comprises Digital Skills, Leadership Skills and Entrepreneurial Skills.
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <h5 style="text-align: center;">Our Approach</h5>
+                <hr class="hr-foot">
+                <div style="text-align: center;">
+                    <ul style="line-height: 2.6em;">
+                        <a class="footer-a" href="../programs.html#work_readiness">
+                            <li>&#8594; Work Readiness Program</li>
+                        </a>
+                        <a class="footer-a" href="../programs.html#entrepreneurship">
+                            <li>&#8594; Entrepreneurship and Business Incubation Services</li>
+                        </a>
+                        <a class="footer-a" href="../programs.html#apprenticeship">
+                            <li>&#8594; Apprenticeship Services</li>
+                        </a>
+                        <a class="footer-a" href="#">
+                            <li>&#8594; Online Courses</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <h5 style="text-align: center;">Internships</h5>
+                <hr class="hr-foot">
+                <div class="footer-items">
+                    <ul style="line-height: 2.6em; margin: 0px; text-align: left;">
+                        <a class="footer-a" href="internship.html#corporate">
+                            <li>&#8594; Corporate Benefits</li></a>
+                            <a class="footer-a" href="internship.html#university">
+                                <li>&#8594; University Benefits</li>
+                            </a>
+                            <a class="footer-a" href="internship.html#student">
+                                <li>&#8594; Students Benefits</li>
+                            </a>
+                            <a class="footer-a" href="#">
+                                <li>&#8594; How to Partner</li>
+                            </a>
+                            <a class="footer-a" href="internabroad.html">
+                                <li>&#8594; Intern Abroad</li>
+                            </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <h5 style="text-align: center;">Office</h5>
+                <hr class="hr-foot">
+                <div class="footer-items">
+                    <ul style="margin: 0px; text-align: left;">
+                        <a class="footer-a" href="../contact.html">
+                            <li>&#8594; Contact</li>
+                        </a>
+                        <a class="footer-a" href="../subs/faq.html">
+                            <li>&#8594; FAQ</li>
+                        </a>
+                        <a class="footer-a" href="#">
+                            <li>&#8594; Privacy Policy</li>
+                        </a>
+                        <a class="footer-a" style="font-size: 1.5em; color: white;" href="https://www.facebook.com/AfricaSkillsHub/" class="facebook"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a style="font-size: 1.5em; margin-left: 12px; color: white;" href="https://twitter.com/africaskillshub" class="twitter"
+                            target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a style="font-size: 1.5em; margin-left: 12px; color: white;" href="https://www.instagram.com/africaskillshub/" class="instagram"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a style="font-size: 1.5em; margin-left: 12px; color: white;" href="https://www.linkedin.com/company/africaskillshub/?viewAsMember=true" class="linkedin"
+                            target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </ul><br>
+                </div>
+                <img style="display: block; margin: auto;" src="../images/sdg.png" alt="" srcset=""><br><br>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+  <div class="footer-copyright">
+    <p>&copy 2020 Copyright <a href="#" target="blank"> People Initiative Foundation</a></p>
+  </div>
+
+  <!-- Image of location/map -->
+  <!-- <div style="display: flex; justify-content: center;align-items: center;">
+    <img src="images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%; height: 500px">
+</div> -->
+  <!-- 
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer> -->
+
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+      $(window).scroll(function () {
+        $(".slideanim").each(function () {
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+        });
+      });
+    })
+
+
+    function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+  </script>
+
+
+  <script src="js/navbar.js"></script>
+
+
+</body>
+
+</html>

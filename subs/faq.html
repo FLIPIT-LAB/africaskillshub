@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>African Internship Academy | Homepage</title>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.rotatingSlideshow.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="../css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+    <div class="site-wrapper no-animation">
+      <div class="mobile-nav">
+          <div class="links">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+              <a href="#">Longer link</a>
+          </div>
+      </div>
+      <nav>
+          <div style=" width: 100%; padding: 0px;" class="container">
+              <div style="padding: -15px;">
+                  <!-- <span>l</span><span>o</span><span>g</span><span>o</span> -->
+                  <img style="width: 180px" class="uk-logo" src="../images/logo2.jpeg" alt="" />
+              </div>
+              <div class="links">
+                  <div class="link teal">
+                      <a href="../index.html"><i class=" fa fa-home"></i></a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link blue nav-item dropdown">
+                      <a style="font-size: 1.2em; font-weight: 500;" class="nav-link dropdown-toggle" href="#"
+                          id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          About Us &#9663;
+                      </a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                      <div style="padding:8px" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="about_us.html">Who we are</a><br>
+                          <a class="dropdown-item" href="about_us.html#team">Our Team</a><br>
+                          <a class="dropdown-item" href="#">Our Fellows</a><br>
+                          <a class="dropdown-item" href="#">Our Metors</a><br>
+                          <a class="dropdown-item" href="../contact.html">Contact</a>
+                      </div>
+                  </div>
+                  <div class="link pink">
+                      <a style="font-size: 1.2em; font-weight: 500;" href="#">Courses</a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link blue">
+                      <a style="font-size: 1.2em; font-weight: 500;" href="../programs.html">Our Programs</a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link teal">
+                      <a style="font-size: 1.2em; font-weight: 500;" href="../apply.html">Apply</a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link teal">
+                      <a style="font-size: 1.2em; font-weight: 500;" href="#">Connect</a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link blue">
+                      <a style="font-size: 1.2em; font-weight: 500;" href="#">Blog</a>
+                      <div class="underline">
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                          <div class="part"></div>
+                      </div>
+                  </div>
+                  <div class="link">
+                      <button class="user-btn" href="#"><span style="color: white;" class="fa fa-lock"></span>
+                          Login</button>
+                  </div>
+              </div>
+              <div class="burger">
+                  <div class="close">
+                      <div class="line"></div>
+                      <div class="line"></div>
+                  </div>
+                  <div class="menu">
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                  </div>
+              </div>
+          </div>
+      </nav><br><br><br><br>
+  </div>
+
+    <main
+        style="display: flex; justify-content: center; align-items: center; background-color: #00042a; padding-top: 50px; padding-bottom: 50px;">
+        <div style=" display: flex; width: 80%; justify-content: center; align-items: center; ">
+          <!-- <div>
+            <img style="width: auto; margin: 16px;" src="images/quote.svg" alt="">
+          </div> -->
+          <div class="text-center" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:100">
+            <h1 style="text-align: center; font-weight: bold; color: white;">FAQ</h1><hr>
+            <p
+              style="font-size: 1.9em; line-height: 1.7em; color: white; margin-left: 26px; font-weight: lighter; overflow: hidden; display: -webkit-box;  -webkit-line-clamp: 3;  -webkit-box-orient: vertical;">
+             What Do You Want To Know
+            </p>
+          </div><br><br><br><br><br>
+        </div>
+      </main>
+
+  <div style="background-color: white; display: flex; flex-direction: column;">
+    <div style="display: flex; margin:0px 50px;">
+        <div class="accordion" style="margin: 16px;">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                What is Web Development?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  Web Development broadly refers to the tasks associated with developing functional websites and applications for the Internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                What is HTML?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and anything that can be viewed in a web browser.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                What are some basic technical skills of a Front-End developer?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <ul style="padding-left: 1rem;">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Frameworks (CSS and JavaScript frameworks)</li>
+                    <li>Responsive Design</li>
+                    <li>Version Control/Git</li>
+                    <li>Testing/Debugging</li>
+                    <li>Browser Developer Tools</li>
+                    <li>Web Performance</li>
+                    <li>SEO (Search Engine Optimization)</li>
+                    <!-- <li>CSS Preprocessing</li> -->
+                    <li>Command Line</li>
+                    <li>CMS (Content Management System)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                What is HTTP?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                What is CORS?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="accordion" style="margin: 16px;">
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  What is Web Development?
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    Web Development broadly refers to the tasks associated with developing functional websites and applications for the Internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  What is HTML?
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and anything that can be viewed in a web browser.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  What are some basic technical skills of a Front-End developer?
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <ul style="padding-left: 1rem;">
+                      <li>HTML, CSS, JavaScript</li>
+                      <li>Frameworks (CSS and JavaScript frameworks)</li>
+                      <li>Responsive Design</li>
+                      <li>Version Control/Git</li>
+                      <li>Testing/Debugging</li>
+                      <li>Browser Developer Tools</li>
+                      <li>Web Performance</li>
+                      <li>SEO (Search Engine Optimization)</li>
+                      <!-- <li>CSS Preprocessing</li> -->
+                      <li>Command Line</li>
+                      <li>CMS (Content Management System)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  What is HTTP?
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  What is CORS?
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+    
+
+    <br><br><br>
+  </div>
+ 
+
+
+    <!-- FOOTER -->
+
+    <footer class="-bg-footer" id="footer">
+      <div class="container-fluid">
+          <div class="row footer-align">
+              <div class="col-md-3 col-sm-4 text-center">
+                  <h5 style="text-align: center;">Africa Skills Hub</h5>
+                  <hr class="hr-foot">
+                  <div>
+                      <a class="footer">
+                          Africa Skills Hub is a youth employment accelerator and business incubator that aims at building Africa’s next generational change agents through practical and accessible learning and coaching tools, delivered online and offline using our Career Pathways Module. The Career Pathways Module (CPM) comprises Digital Skills, Leadership Skills and Entrepreneurial Skills.
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                  <h5 style="text-align: center;">Our Approach</h5>
+                  <hr class="hr-foot">
+                  <div style="text-align: center;">
+                      <ul style="line-height: 2.6em;">
+                          <a class="footer-a" href="../programs.html#work_readiness">
+                              <li>&#8594; Work Readiness Program</li>
+                          </a>
+                          <a class="footer-a" href="../programs.html#entrepreneurship">
+                              <li>&#8594; Entrepreneurship and Business Incubation Services</li>
+                          </a>
+                          <a class="footer-a" href="../programs.html#apprenticeship">
+                              <li>&#8594; Apprenticeship Services</li>
+                          </a>
+                          <a class="footer-a" href="#">
+                              <li>&#8594; Online Courses</li>
+                          </a>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                  <h5 style="text-align: center;">Internships</h5>
+                  <hr class="hr-foot">
+                  <div class="footer-items">
+                      <ul style="line-height: 2.6em; margin: 0px; text-align: left;">
+                              <a class="footer-a" href="internship.html#corporate">
+                              <li>&#8594; Corporate Benefits</li>
+                              </a>
+                              <a class="footer-a" href="internship.html#university">
+                                  <li>&#8594; University Benefits</li>
+                              </a>
+                              <a class="footer-a" href="internship.html#student">
+                                  <li>&#8594; Students Benefits</li>
+                              </a>
+                              <a class="footer-a" href="#">
+                                  <li>&#8594; How to Partner</li>
+                              </a>
+                              <a class="footer-a" href="internabroad.html">
+                                  <li>&#8594; Intern Abroad</li>
+                              </a>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                  <h5 style="text-align: center;">Office</h5>
+                  <hr class="hr-foot">
+                  <div class="footer-items">
+                      <ul style="margin: 0px; text-align: left;">
+                          <a class="footer-a" href="../contact.html">
+                              <li>&#8594; Contact</li>
+                          </a>
+                          <a class="footer-a" href="../subs/faq.html">
+                              <li>&#8594; FAQ</li>
+                          </a>
+                          <a class="footer-a" href="#">
+                              <li>&#8594; Privacy Policy</li>
+                          </a>
+                          <a class="footer-a" style="font-size: 1.5em; color: white;" href="https://www.facebook.com/AfricaSkillsHub/" class="facebook"
+                              target="_blank"><i class="fab fa-facebook"></i></a>
+                          <a style="font-size: 1.5em; margin-left: 12px; color: white;" href="https://twitter.com/africaskillshub" class="twitter"
+                              target="_blank"><i class="fab fa-twitter"></i></a>
+                          <a style="font-size: 1.5em; margin-left: 12px; color: white;" href="https://www.instagram.com/africaskillshub/" class="instagram"
+                              target="_blank"><i class="fab fa-instagram"></i></a>
+                              <a style="font-size: 1.5em; margin-left: 12px; color: white;" href="https://www.linkedin.com/company/africaskillshub/?viewAsMember=true" class="linkedin"
+                              target="_blank"><i class="fab fa-linkedin"></i></a>
+                      </ul><br>
+                  </div>
+                  <img style="display: block; margin: auto;" src="../images/sdg.png" alt="" srcset=""><br><br>
+              </div>
+          </div>
+      </div>
+
+  </footer>
+
+    <div class="footer-copyright">
+        <p>&copy 2020 Copyright <a href="#" target="blank"> People Initiative Foundation</a></p>
+    </div>
+
+    <script src="../js/script.js"></script>
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script src="../js/navbar.js"></script>
+
+    <script>
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+    
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+    
+    // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+    // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+    //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+    //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    // }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if(accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+    
+  });
+});
+    </script>
+</body>
+
+</html>
